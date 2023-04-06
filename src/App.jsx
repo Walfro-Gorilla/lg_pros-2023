@@ -11,7 +11,7 @@ import { UserContext } from "./context/UserProvider"
 
 const App = () => {
 
-  const {user} = useContext(UserContext)
+  const { user } = useContext(UserContext)
 
   if (user === false) {
     return <p>Loading...</p>
