@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+  <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 360px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+      }
+
+      body {
+        border-top: 16px solid #ffa100;
+      }
+    }
+  </style>
+
+
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-submenu.js"></script>
+  <script src="js/rangeslider.js"></script>
+  <script src="js/jquery.mb.YTPlayer.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.scrollUp.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.filterizr.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/lightgallery-all.js"></script>
+  <script src="js/jnoty.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/app.js"></script>
+
+  {/* <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> */}
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  {/* <!-- Custom javascript --> */}
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+  <!-- External CSS libraries -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jnoty.css">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+   <script  src="js/html5shiv.min.js"></script>
+   <script  src="js/respond.min.js"></script>
+   <![endif]-->
+
+  <!-- Chatbot Start -->
+  <!-- ManyChat -->
+  <!-- <script src="//widget.manychat.com/101339168962472.js" defer="defer"></script>
+   <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script> -->
+  <!-- Chatbot End -->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script type="module" src="/js/index.js"></script>
+
+
+</head>
+
+
+<body>
+  <div id="message">
+    <h2>Welcome</h2>
+    <h1>Firebase Hosting Setup Complete</h1>
+    <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something
+      extraordinary!</p>
+    <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  </div>
+  <p id="load">Firebase SDK Loading&hellip;</p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth',
+          'database',
+          'firestore',
+          'functions',
+          'messaging',
+          'storage',
+          'analytics',
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
+</html>
