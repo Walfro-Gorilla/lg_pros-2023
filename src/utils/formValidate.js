@@ -1,6 +1,6 @@
 export const formValidate = () => {
     return {
-        required: "Email obligatorio",
+        required: "Campo obligatorio",
         minLength: 6,
         validateTrim: {
             trim: (v) => {
